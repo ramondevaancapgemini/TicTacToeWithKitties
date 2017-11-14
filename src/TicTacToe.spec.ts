@@ -4,7 +4,7 @@ import { TicTacToe } from './TicTacToe';
 import { Player } from './Player';
 import { Color } from './Color';
 
-describe('testertje', () => {
+describe('TicTacToeTest', () => {
     let p1 : Player;
     let p2 : Player;
     let ttt : TicTacToe;
