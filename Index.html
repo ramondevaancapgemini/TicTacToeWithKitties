@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/systemjs@0.20.19/dist/system.js"></script>
+        <title>
+            Tic Tac Toe
+        </title>
+    </head>
+    <body>
+        <h1>Tic Tac Toe.</h1>
+        <table id="gameholder"></table>
+        <script>
+            System.config({
+                packages: {
+                    'build': {
+                        'main': 'App.js'
+                    }
+                },
+                map: {
+                    lodash: 'node_modules/lodash/lodash.js'
+                }
+            });
+            System.import('build');
+        </script>
+    </body>
+</html>
